@@ -36,3 +36,12 @@ console.log(person.name2);
 let selection = 'name2';
 person[selection] = 'Paulie';
 console.log(person.name2);
+
+// Arrays (its an object in javascript)
+let selectedColors = ['red', 'blue', 'yellow'];
+selectedColors[3] = 'green';
+selectedColors[4] = '5';
+selectedColors[5] = null;
+console.log(selectedColors);
+console.log(selectedColors[1]);
+console.log(selectedColors.length);
