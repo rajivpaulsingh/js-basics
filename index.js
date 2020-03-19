@@ -45,3 +45,10 @@ selectedColors[5] = null;
 console.log(selectedColors);
 console.log(selectedColors[1]);
 console.log(selectedColors.length);
+
+// Functions
+function greet(name3) { //parameter
+    console.log('Hello there ' + name3);
+}
+greet('Rajiv'); //argument
+greet('Singh');
