@@ -20,3 +20,19 @@ let isApproved = true; //Boolean literal
 let firstName1; //Undefined
 let middleName1 = undefined //Undefined
 let lastName1 = null; //Null
+
+// Objects
+let person = {
+    name2: 'Rajiv',
+    age2: '35'
+};
+console.log(person);
+
+// Dot notation
+person.name2 = 'Happy';
+console.log(person.name2);
+
+// Bracket notation
+let selection = 'name2';
+person[selection] = 'Paulie';
+console.log(person.name2);
