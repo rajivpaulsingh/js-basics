@@ -123,3 +123,85 @@ console.log(1 & 2);
 // 00000110
 // 00000111
 
+
+// If...else
+// if hour is between 6 am and 12 pm: Good morning!
+// if it is between 12 pm and 6 pm: Good afternoon!
+// otherwise: Good evening!
+let hour = 15;
+if (hour >= 6 && hour < 12) {
+    console.log('Good morning');
+}
+else if (hour >= 12 && hour < 18) {
+    console.log('Good afternoon');
+}
+else 
+    console.log('Goof evening');
+
+// Switch...case
+let role = 'moderator';
+
+switch(role) {
+    case 'guest':
+    console.log('Guest User');
+    break;
+
+    case 'moderator':
+    console.log('Moderator User');
+    break;
+
+    default:
+    console.log('Unknown User');
+}
+
+// For loop
+for (let i = 0; i < 5; i++) {
+    console.log('Hello world', i);
+}
+
+// // While loop
+// let i = 0;
+// while (i <= 5) {
+//     if (i % 2 !== 0) console.log(i);
+//         i++;
+// }
+
+// // do-while loop
+// let i = 9;
+// do {
+//     if (i % 2 !== 0) console.log(i);
+//     i++;
+// } while (i <= 5);
+
+// for-in loop
+const person2  = {
+    name: 'Rajiv',
+    age: 37
+}
+
+for (let key in person2) {
+    console.log(key, person2[key]);
+}
+
+const colors = ['red', 'green', 'blue'];
+for (let index in colors) {
+    console.log(index);
+    console.log(colors[index]);
+}
+
+// for-of loop
+for (let color of colors) {
+    console.log(color);
+}
+
+// Break and Continue
+let j = 0 ;
+while (j <= 10) {
+    // if (j === 5) break;
+    if (j %2 === 0) {
+        j++;
+        continue;
+    }
+    console.log(j);
+    j++;
+}
