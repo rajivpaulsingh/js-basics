@@ -239,3 +239,12 @@ console.log(circle1);
 
 const circle2 = createCircle(3);
 console.log(circle2);
+
+//Constructor function
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw');
+    }
+}
+const circle3 = new Circle(1);
