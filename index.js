@@ -220,3 +220,22 @@ const circle = {
     }
 };
 circle.draw();
+
+//Factory function
+function createCircle(radius) {
+    return {
+        // radius: radius,
+        radius,
+        // draw: function() {
+        //     console.log('draw');
+        // }
+        draw() {
+            console.log('draw');
+        }
+    };
+}
+const circle1 = createCircle(2);
+console.log(circle1);
+
+const circle2 = createCircle(3);
+console.log(circle2);
