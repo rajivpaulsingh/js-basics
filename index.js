@@ -275,5 +275,23 @@ console.log(message2);
 //New way using template literal
 const anotherMessage2 = `This is my
                 second message`;
-console.log(anotherMessage2);                
+console.log(anotherMessage2);     
+
+
+//Exercise - Create Address Object
+//street, city, zipCode
+//showAddress(address)
+
+let address = {
+    street: 'a',
+    city: 'b',
+    zipCode: 'c'
+};
+
+function showAddress(address) {
+    for (let key in address) {
+        console.log(key, address[key]);
+    }
+}
+showAddress(address);
 
