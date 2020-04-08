@@ -266,3 +266,14 @@ const message = 'hi';
 //String object
 const anotherMessage = new String('hi');
 //typeOf message, this will result 'Object'
+
+//Template literal (``) <- backtick character
+//Old way
+const message2 = 'This is my \n' + 
+                'first message';
+console.log(message2);
+//New way using template literal
+const anotherMessage2 = `This is my
+                second message`;
+console.log(anotherMessage2);                
+
