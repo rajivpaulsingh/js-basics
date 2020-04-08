@@ -240,6 +240,16 @@ console.log(circle1);
 const circle2 = createCircle(3);
 console.log(circle2);
 
+//Enumerating the properties of an object
+//for-in
+for(let key in circle) {
+    console.log(key, createCircle[key]);
+}
+//for-of
+for(let key of Object.keys(createCircle)) {
+    console.log(key);
+}
+
 //Constructor function
 function Circle(radius) {
     this.radius = radius;
