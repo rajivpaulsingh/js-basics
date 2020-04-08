@@ -258,3 +258,11 @@ function Circle(radius) {
     }
 }
 const circle3 = new Circle(1);
+
+//String primitive
+const message = 'hi';
+//typeOf message, this will result 'String'
+
+//String object
+const anotherMessage = new String('hi');
+//typeOf message, this will result 'Object'
