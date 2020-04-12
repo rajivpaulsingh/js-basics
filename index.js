@@ -412,3 +412,18 @@ for (let number of numbers2) {
 //another way
 numbers2.forEach(number => console.log(number));
 numbers2.forEach((number, index) => console.log(index, number)); //with index
+
+//Exercise - Array from range
+const numbers3 = arrayFromRange(-10, -4);
+const numbers4 = arrayFromRange(1, 4);
+
+console.log(numbers3);
+console.log(numbers4);
+
+function arrayFromRange(min, max) {
+    const output = [];
+    for (let i = min; i <= max; i++) {
+        output.push(i);
+    }
+    return output;
+}
