@@ -427,3 +427,18 @@ function arrayFromRange(min, max) {
     }
     return output;
 }
+
+
+//Exercise - Includes an element
+const numbers5 = [1, 2, 3, 4];
+
+console.log(numbers5.includes(3));
+
+function includes(array, searchElement) {
+    for(let number of array) {
+        if(number === searchElement) {
+            return true;
+        }
+    }
+    return false;
+}
