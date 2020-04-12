@@ -369,4 +369,21 @@ console.log(courses.includes({id: 1, name: 'a'},));
 const course = courses.find(function(course) {
     return course.name === 'a';
 });
+//Or using Arrow function
+const course1 = courses.find(course1 => course1.name ==='a');
 console.log(course)
+
+//Removing elements from an array
+const numbers1 = [1, 2, 3, 4];
+
+//Removing elements from the end of an array
+const last = numbers1.pop();
+console.log(numbers1);
+
+//Removing elements from the beginning of an array
+const first = numbers1.shift();
+console.log(numbers1);
+
+//Removing elements from the middle of an array
+numbers1.splice(2, 1);
+console.log(numbers1)
