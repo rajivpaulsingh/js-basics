@@ -350,5 +350,23 @@ console.log(numbers);
 numbers.splice(2, 0, 'a', 'b');
 console.log(numbers)
 
+//Finding elements in an array(Primitive type)
+console.log(numbers.indexOf('c'));
+console.log(numbers.indexOf(3));
 
+console.log(numbers.indexOf(1) !== -1);
+console.log(numbers.includes(2));
 
+//Finding elements in an array(Reference type)
+const courses = [
+    {id: 1, name: 'a'},
+    {id: 2, name: 'b'}
+];
+//Wrong way
+console.log(courses.includes({id: 1, name: 'a'},));
+
+//Right way
+const course = courses.find(function(course) {
+    return course.name === 'a';
+});
+console.log(course)
