@@ -387,3 +387,13 @@ console.log(numbers1);
 //Removing elements from the middle of an array
 numbers1.splice(2, 1);
 console.log(numbers1)
+
+//Combining and slicing arrays
+const one = [1, 2, 3];
+const two = [4, 5, 6];
+
+const combined = one.concat(two);
+const slice = combined.slice(2, 4);
+
+console.log(combined);
+console.log(slice);
