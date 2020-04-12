@@ -397,3 +397,7 @@ const slice = combined.slice(2, 4);
 
 console.log(combined);
 console.log(slice);
+
+//Another way of combining  - the spread operator
+const combined1 = [...one, ...two];
+console.log(combined1);
