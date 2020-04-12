@@ -401,3 +401,14 @@ console.log(slice);
 //Another way of combining  - the spread operator
 const combined1 = [...one, ...two];
 console.log(combined1);
+
+//Iterating an array
+const numbers2 = [1, 2, 3];
+
+//one way
+for (let number of numbers2) {
+    console.log(number);
+}
+//another way
+numbers2.forEach(number => console.log(number));
+numbers2.forEach((number, index) => console.log(index, number)); //with index
