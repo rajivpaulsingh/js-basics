@@ -333,3 +333,22 @@ let post = {
 };
 console.log(post);
 
+
+//Arrays
+const numbers = [3, 4];
+console.log(numbers);
+
+//Add new elements to the end of an array
+numbers.push(5, 6);
+console.log(numbers);
+
+//Add new elements to the beginning of an array
+numbers.unshift(1, 2);
+console.log(numbers);
+
+//Add new elements to the middle of an array
+numbers.splice(2, 0, 'a', 'b');
+console.log(numbers)
+
+
+
