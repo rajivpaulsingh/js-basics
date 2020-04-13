@@ -442,3 +442,21 @@ function includes(array, searchElement) {
     }
     return false;
 }
+
+
+//exercise - Exclude the numbers
+const numbers6 = [1, 2, 3, 4, 1, 2, 1];
+
+const output1 = except(numbers6, [1, 2]);
+console.log(output1);
+
+function except(array1, excluded1) {
+
+    const output = [];
+    for(let number1 of array1) {
+        if(!excluded1.includes(number1)) {
+            output.push(number1);
+        }
+    }
+    return output;
+}
