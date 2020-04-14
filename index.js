@@ -393,7 +393,7 @@ const one = [1, 2, 3];
 const two = [4, 5, 6];
 
 const combined = one.concat(two);
-const slice = combined.slice(2, 4);
+const slice = combined.splice(2, 4);
 
 console.log(combined);
 console.log(slice);
@@ -459,4 +459,18 @@ function except(array1, excluded1) {
         }
     }
     return output;
+}
+
+
+//Exercise - Moving an element from one position to another
+const numbers7 = [1, 2, 3, 4];
+
+const output2 = move(numbers7, 2, 3);
+console.log(output2);
+
+function move(array, index, offset) {
+    const output2 = [...array];
+    const element = output2.splice(index, 1)[0];
+    output2.splice(index + offset, 0, element);
+    return output2;
 }
