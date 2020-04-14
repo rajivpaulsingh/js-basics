@@ -465,7 +465,7 @@ function except(array1, excluded1) {
 //Exercise - Moving an element from one position to another
 const numbers7 = [1, 2, 3, 4];
 
-const output2 = move(numbers7, 2, 3);
+const output2 = move(numbers7, 1, 2);
 console.log(output2);
 
 function move(array, index, offset) {
@@ -479,4 +479,21 @@ function move(array, index, offset) {
     const element = output2.splice(index, 1)[0];
     output2.splice(position, 0, element);
     return output2;
+}
+
+
+//Exercise - Count occurrences
+const numbers8 = [1, 2, 3, 2, 2, 4];
+
+const count = countOfOccurrences(numbers8, 2);
+console.log(count);
+
+function countOfOccurrences(array, searchElement) {
+    let count = 0;
+    for(let element of array) {
+        if(element === searchElement) {
+            count++;
+        }
+    }
+    return count;
 }
