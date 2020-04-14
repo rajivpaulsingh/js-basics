@@ -497,3 +497,21 @@ function countOfOccurrences(array, searchElement) {
     }
     return count;
 }
+
+
+//Exercise - Get maximum element from an array
+const numbers9 = [1, 2, 3, 14, 6, 5];
+
+const max = getMax(numbers9);
+console.log(max);
+
+function getMax(array) {
+    if (array.length === 0) return undefined;
+    let max = 0;
+    for(let element of array) {
+        if(element > max) {
+            max = element;
+        }
+    }
+    return max;
+}
