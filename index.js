@@ -469,8 +469,14 @@ const output2 = move(numbers7, 2, 3);
 console.log(output2);
 
 function move(array, index, offset) {
+
+    const position = index + offset;
+    if(position >= array.length) {
+        console.error('Invalid offset.');
+        return;
+    }
     const output2 = [...array];
     const element = output2.splice(index, 1)[0];
-    output2.splice(index + offset, 0, element);
+    output2.splice(position, 0, element);
     return output2;
 }
