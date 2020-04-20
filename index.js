@@ -534,3 +534,16 @@ const titles = movies
     .reverse()
     .map(m => m.title)
 console.log(titles);    
+
+
+//Exercise - Sum of Arguments
+const sum = sumOfArguments(1, 2, 3, 4, 5);
+console.log(sum);
+
+function sumOfArguments(...items) {
+    let total = 0;
+    for (let element of items) {
+        total += element;
+    }
+    return total;
+}
