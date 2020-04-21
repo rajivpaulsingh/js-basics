@@ -547,3 +547,13 @@ function sumOfArguments(...items) {
     }
     return total;
 }
+
+
+//Exercise - Area of a Circle
+const circle4 = {
+    radius: 2,
+    get area() {
+        return Math.PI * this.radius * this.radius;
+    }
+};
+console.log(circle4.area);
